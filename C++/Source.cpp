@@ -9,9 +9,8 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello, world!" << endl;
 	
-	cout << M_PI << endl;
+	double value;
 	
 	_getch();
 	
