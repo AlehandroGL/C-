@@ -1,10 +1,12 @@
 #include <iostream>
 #include <cstdlib> // для system
+#include <conio.h>
 using namespace std;
 
 int main()
 {
 	cout << "Hello, world!" << endl;
-	system("pause"); // Только для тех, у кого MS Visual Studio
+	
+	_getch();
 	return 0;
 }
