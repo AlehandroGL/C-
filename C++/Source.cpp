@@ -9,30 +9,16 @@ using namespace std;
 
 int main()
 {
-	/*ÇÀÄÀÍÈÅ 1*/
-	double x, y;
-	double e = pow(10, -3);
-	double Z;
-
-	cin >> x >> y;
-
+	
 
 	
-	Z = 7 * pow(tan(x), 2) - 0.31 * pow(x, 3) + 3.2 * pow(x, 2) - exp(x);
-	
-	if (abs(Z-y) <= e)
+	for (int i = 1; i <=10; i++)
 	{
-		cout << "yes";
+		for (int g = 1; g < 10; g++)
+		{
+			cout << g << "*" << i << "=" << g * i << endl;
+		}
 	}
-	else
-	{
-		cout << "no";
-	}
-
-
-
-
-	
 
 
 	
