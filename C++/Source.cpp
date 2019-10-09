@@ -9,33 +9,30 @@ using namespace std;
 
 int main()
 {
-	
+	/*ÇÀÄÀÍÈÅ 1*/
 	double x, y;
-	double eps = -10;
+	double e = pow(10, -3);
 	double Z;
 
 	cin >> x >> y;
 
 
-	if (abs(x) > 1)
+	
+	Z = 7 * pow(tan(x), 2) - 0.31 * pow(x, 3) + 3.2 * pow(x, 2) - exp(x);
+	
+	if (abs(Z-y) <= e)
 	{
-		Z = pow(sin(pow(x, 3)), 2);
+		cout << "yes";
 	}
-	if (abs(Z - y) < eps)
+	else
 	{
-		cout << pow(sin(pow(x, 3)), 2);
+		cout << "no";
 	}
 
 
 
-	if (abs(x) <= 1)
-	{
-		Z = sqrt(6 * pow(asin(x), 2)) + 4 * pow(x, 2) + 2;
-	}
-	if (abs(Z - y) < eps)
-	{
-		cout << sqrt(6 * pow(asin(x), 2)) + 4 * pow(x, 2) + 2;
-	}
+
+	
 
 
 	
