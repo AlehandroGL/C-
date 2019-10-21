@@ -9,28 +9,40 @@ using namespace std;
 
 int main()
 {
-	
 	setlocale(LC_ALL, "RUS");
+	
+	/*задание 1*/
+/*	double  m,u;
+	double s = 0;
+	int n;
+	cin >> n, m;
 
-		double x=2,y;// system32
-		int n=5;
-		float s = 0;
-
-		for (int i = 0; i < n; i++)
-		{
-			y = pow(x, 2 * (n - 1));
-			s = s + y;
-			cout << s << endl;
-		}
-	
-		
-	
-	/*ЗАДАНИЕ_3 (нема в гитхабе)*/
-	
-	/*for (float i = 0; i <= 1; i = i + 0.1)
+	for (int i = 0; i <= n; i++)
 	{
-		cout << sin(i) << endl;
-	}*/
+		u = m+i;
+		cout << "Доданок i= " << i << "= " << u << endl;
+		s += m;
+	}
+	cout << "Сумма:" << s << endl;
+	
+	/*Задание 2*/
+
+	
+	float i = 0;
+	double x, g, f;
+
+	
+	 
+	for (i=0.5; i <= 4; i+=0.1)
+		
+	{
+		cout << "i=" << i;
+		f=1 / i;
+		g = pow((i / 3), 2 );
+		cout << "g=" << g << endl;
+		cout << "f=" << f << endl;
+
+	}
 
 
 	_getch();
