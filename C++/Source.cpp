@@ -10,44 +10,29 @@ using namespace std;
 int main()
 {
 	
-	/*Задание_1*/
-	double x;
-	int n,s=0;
-	double y;
+	setlocale(LC_ALL, "RUS");
+
+		double x=2,y;// system32
+		int n=5;
+		float s = 0;
+
+		for (int i = 0; i < n; i++)
+		{
+			y = pow(x, 2 * (n - 1));
+			s = s + y;
+			cout << s << endl;
+		}
 	
-	cout << " x: ";
-	cin >> x;
-
-	cout << " n: ";
-	cin >> n;
-
-	for (int i = 0; i <= n; i++)
-	{
-		y = pow(x, 3 * i);
-		s = s + y;
 		
-	}
-	cout << s << endl;
 	
-	/*Задание_2*/
-	double P, M, N;
-	cin >> M >> N;
-	for (int i = 0; i < M; i++)
+	/*ЗАДАНИЕ_3 (нема в гитхабе)*/
+	
+	/*for (float i = 0; i <= 1; i = i + 0.1)
 	{
-		P= N * M;
-	}
-	cout << "P=: " << P << endl;
-	
-	
-	/*ЗАДАНИЕ_3*/
-	
-	for (int i = 0; i < 1; i+=0.1)
-	{
-		cout<< tan(i) << endl;
-	}
+		cout << sin(i) << endl;
+	}*/
 
 
-	
 	_getch();
 	
 }
