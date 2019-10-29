@@ -11,40 +11,61 @@ int main()
 {
 	setlocale(LC_ALL, "RUS");
 	
-	/*задание 1*/
-/*	double  m,u;
-	double s = 0;
+	/*1 задание*/
+	double x, f, u, S = 0;
+	int i, k = 0;
+
+	cin >> x;
+
+	do
+	{
+		k++;
+		for (int i = 0; i <= (2 * k); i++)
+		{
+			f *= i;
+			u = (pow(-1, k - 1) * pow(x, 3 * k - 1)) / ((2 * k) * f);
+			S += u;
+		}
+	} while (fabs(u) > 1e-4);
+	
+		cout << S <<endl;
+		cout << k << endl;
+	
+
+
+
+	/* zadanie 2*/
+	double result;
+	double x, k,F;
 	int n;
-	cin >> n, m;
 
-	for (int i = 0; i <= n; i++)
+	cin >> x;
+	cin >> k;
+	cin >> n;
+	do {
+		for (int i = 0; i < n; i++)
+		{
+			F = (5 * log(2 * k * x)) / atan(2 * x) + pow(k, 2);
+			result += F;
+		}
+
+
+
+	} while (i <= n);
+	cout << F << endl;
+	
+	
+	
+	/*3 задание*/
+	double value;
+	double value_result;
+	cin >> value;
+
+	do
 	{
-		u = m+i;
-		cout << "Доданок i= " << i << "= " << u << endl;
-		s += m;
-	}
-	cout << "Сумма:" << s << endl;
-	
-	/*Задание 2*/
-
-	
-	float i = 0;
-	double x, g, f;
-
-	
-	 
-	for (i=0.5; i <= 4; i+=0.1)
-		
-	{
-		cout << "i=" << i;
-		f=1 / i;
-		g = pow((i / 3), 2 );
-		cout << "g=" << g << endl;
-		cout << "f=" << f << endl;
-
-	}
-
-
+		value_result=
+	} while (true);
+	cout << value_result;
 	_getch();
 	
 }
